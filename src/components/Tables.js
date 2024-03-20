@@ -1,5 +1,6 @@
 import React from 'react'
-
+import up from '../up.png'
+import down from '../down.png'
 const Tables = () => {
   return (
     <>
@@ -12,11 +13,15 @@ const Tables = () => {
                 <th scope="col" className="px-6 py-3 bg-gray-50 dark:bg-gray-800">
                     Name
                 </th>
-                <th scope="col" className="px-6 py-3">
+                <th scope="col" className="px-6 py-3 flex">
+                    <img src={up} className='h-5 w-5 mx-2'/>
                     Rating
+                    <img src={down} className='h-5 w-5 mx-2'/>
                 </th>
-                <th scope="col" className="px-6 py-3 bg-gray-50 dark:bg-gray-800">
-                    Popularity
+                <th scope="col" className="px-6 py-3">
+                    <img src={up} className='h-5 w-5 mx-2'/>
+                    Rating
+                    <img src={down} className='h-5 w-5 mx-2'/>
                 </th>
                 <th scope="col" className="px-6 py-3">
                     Genre
