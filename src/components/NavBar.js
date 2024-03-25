@@ -1,16 +1,15 @@
-import React from 'react'
-import Logo from '../logo.png'
-import { Link } from 'react-router-dom'
+import React from 'react';
+import Logo from '../logo.png';
+import { Link } from 'react-router-dom';
+
 const NavBar = () => {
   return (
-    <>
-    <div className='flex px-8 space-x-8 items-center bg-black py-4' >
-    <img src={Logo} className='w-[50px] md:w-[60px] h-12 rounded-2xl' alt='Logo'/>
-    <Link to='/movies'><h2 className='text-blue-400 font-bold text-xl md:text-3xl '>Movies</h2></Link>
-    <Link to='/favourites'><h2 className='text-blue-400 font-bold text-xl md:text-3xl'>Favourites</h2></Link>
+    <div className='flex px-4 sm:px-8 space-x-4 sm:space-x-8 items-center bg-black py-4'>
+      <img src={Logo} className='w-10 h-10 sm:w-12 sm:h-12 rounded-full' alt='Logo' />
+      <Link to='/movies' className='text-blue-400 font-bold text-sm sm:text-xl'>Movies</Link>
+      <Link to='/favourites' className='text-blue-400 font-bold text-sm sm:text-xl'>Favourites</Link>
     </div>
-    </>
-  )
+  );
 }
 
-export default NavBar
+export default NavBar;
